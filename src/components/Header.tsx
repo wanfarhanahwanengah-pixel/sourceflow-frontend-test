@@ -5,10 +5,9 @@ export default function Header() {
     <header className="bg-white">
       <div className="mx-auto max-w-7xl px-4 xl:px-6 2xl:px-12">
         <div className="flex h-16 items-center justify-between gap-2 xl:gap-4">
-          {/* Mobile menu button */}
           <button
             type="button"
-            className="xl:hidden p-2 text-blue-900 hover:text-blue-700"
+            className="md:hidden p-2 text-blue-900 hover:text-blue-700"
             aria-label="Open menu"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -16,13 +15,11 @@ export default function Header() {
             </svg>
           </button>
 
-          {/* Left-side: Company name */}
-          <a href="#" className="hidden xl:block font-semibold text-blue-900 text-base xl:text-lg -ml-8 xl:-ml-12 truncate">
+          <a href="#" className="hidden md:block font-semibold text-blue-900 text-base xl:text-lg md:ml-0 xl:-ml-12 truncate">
             Software Recruitment co.
           </a>
 
-          {/* Middle: Navigation menu - takes remaining space */}
-          <nav aria-label="Primary" className="hidden xl:block flex-1 flex justify-start pl-8">
+          <nav aria-label="Primary" className="hidden md:flex flex-1 justify-start pl-8">
             <ul className="flex items-center gap-6 text-sm font-medium text-gray-900 tracking-wide">
               {navLinks.map((l) => (
                 <li key={l.label}>
@@ -37,7 +34,6 @@ export default function Header() {
             </ul>
           </nav>
 
-          {/* Right-side: Buttons */}
           <div className="flex items-center gap-1 xl:gap-2 ml-auto -mr-2 xl:-mr-4">
             <a
               href="#upload"
